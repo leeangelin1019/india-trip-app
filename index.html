@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="no-scrollbar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#FDFBF7" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="South India 2026">
+    
+    <title>South India Odyssey 2026</title>
+    
+    <!-- Google Fonts: Noto Serif JP -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- Favicon (Browser Tab) - Sun/Tropical Theme -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%23FFF7ED'/%3E%3Ccircle cx='256' cy='256' r='180' fill='%23E85D04'/%3E%3Cpath d='M256 120L290 200H370L305 250L330 330L256 280L182 330L207 250L142 200H222L256 120Z' fill='%23FFD700'/%3E%3C/svg%3E" />
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="https://img.icons8.com/fluency/512/sun.png" />
+
+    <!-- Android Manifest -->
+    <link rel="manifest" href="./manifest.json" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script shadow-none>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'mag-paper': '#FDFBF7',       // Warm Off-White
+              'mag-white': '#FFFFFF',       // Card Background
+              'mag-black': '#1F2937',       // Dark Gray/Blue
+              'mag-gray': '#6B7280',        // Secondary Text
+              'mag-gold': '#E85D04',        // Saffron / Spice Orange
+              'mag-gold-light': '#FFF7ED',  // Warm Cream Background
+              'mag-red': '#D93025',         // Highlight Red
+            },
+            fontFamily: {
+              sans: ['-apple-system', 'BlinkMacSystemFont', 'Helvetica Neue', 'Arial', 'PingFang TC', 'Heiti TC', 'Microsoft JhengHei', 'sans-serif'],
+              serif: ['Georgia', 'Times New Roman', 'serif'],
+              noto: ['"Noto Serif JP"', 'serif'],
+            },
+            boxShadow: {
+              'soft': '0 4px 20px rgba(232, 93, 4, 0.05)',
+              'float': '0 10px 30px rgba(0, 0, 0, 0.08)',
+            },
+            padding: {
+              'safe-top': 'env(safe-area-inset-top)',
+              'safe-bottom': 'env(safe-area-inset-bottom)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html, body, .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          overflow-x: hidden;
+      }
+      *::-webkit-scrollbar { display: none !important; }
+      body {
+        -webkit-tap-highlight-color: transparent;
+        background-color: #FDFBF7;
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+      }
+      header {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+      #root { width: 100%; overflow-x: hidden; }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.3/client",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-mag-paper text-mag-black antialiased selection:bg-mag-gold selection:text-white no-scrollbar">
+    <div id="root" class="no-scrollbar"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
